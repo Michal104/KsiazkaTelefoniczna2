@@ -9,13 +9,13 @@ public class KsiazkaTelefoniczna2 {
         System.out.println(); //odstęp
         int menu;
 
-//        String tabImie[] = {"","","","Michal","Lukasz","","","","",""};
-//        String tabNazwisko[] = {"","","","Dzbanski","Aleksandrowski","","","","",""};   pamięć do testów
-//        int tabNumer[] = {0,0,0,790469414,793017485,0,0,0,0,0};
+        String tabImie[] = {"","","","Michal","Lukasz","","","","",""};
+        String tabNazwisko[] = {"","","","Dzbanski","Aleksandrowski","","","","",""};   //pamięć do testów
+        int tabNumer[] = {0,0,0,790469414,793017485,0,0,0,0,0};
 
-        String tabImie[] = new String[10];
-        String tabNazwisko[] = new String[10];  //pusto null
-        int tabNumer[] = new int[10];
+//        String tabImie[] = new String[10];
+//        String tabNazwisko[] = new String[10];  //pusto null
+//        int tabNumer[] = new int[10];
 
         String imie;
         String nazwisko;
@@ -47,12 +47,13 @@ public class KsiazkaTelefoniczna2 {
                     for (i = 0; i < 10; i++) {
                         if (tabNazwisko[i].equals(imieNazwisko)) {
                             System.out.println(tabImie[i] + " " + tabNazwisko[i] + " " +tabNumer[i]);
-                        }if (tabImie[i].equals(imieNazwisko)) {
+                        }
+                        if (tabImie[i].equals(imieNazwisko)) {
                             System.out.println(tabImie[i] + " " + tabNazwisko[i] + " " +tabNumer[i]);
                         }
                     }
-                    if(false);
-                        System.out.println("Brak kontaktu w bazie.");
+                    if(false){
+                        System.out.println("Brak kontaktu w bazie.");}
                         break;
                 case 3:
                     System.out.println("Wprowadź imię");
